@@ -1,0 +1,106 @@
+.detailbg{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../../src/Image/viaje.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.imgdetail{
+    width: 250px;
+    height: 150px;
+    border-radius: 20xp;
+}
+
+.cldetail{
+    width: 400px;
+    height: 600px;
+    text-decoration: none;
+    display: flex;
+    border-radius: 20px;
+    font-family: inherit;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0,0.7);
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    margin-bottom: 30px;
+    padding-top: 30px;    
+}
+
+.clactivity{
+    width: 200px;
+    height: 100px;
+    text-decoration: none;
+    display: flex;
+    border-radius: 10px;
+    font-family: inherit;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0,0.7);
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    margin-bottom: 90px;
+    padding-top: 15px;    
+}
+
+.btndetail {
+    position: relative;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0,0.7);
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+
+.btndetail:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btndetail:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btndetail::after {
+    content: "";
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btndetail::after {
+    background-color: rgb(0, 0, 0);
+}
+
+.btndetail:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}

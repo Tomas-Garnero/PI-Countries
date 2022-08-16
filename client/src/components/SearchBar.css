@@ -1,0 +1,72 @@
+.inputsearch{
+    padding: 5px;
+    width: 150px;
+    height: 35px;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0,0.7);
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 7px;
+    margin-top: 0;
+}
+
+.btnsearch {
+    position: relative;
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0,0.7);
+    margin-left: 10px;
+    margin-right: 2px;
+}
+
+
+.btnsearch:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btnsearch:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btnsearch::after {
+    content: "";
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btnsearch::after {
+    background-color: rgb(0, 0, 0);
+}
+
+.btnsearch:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
